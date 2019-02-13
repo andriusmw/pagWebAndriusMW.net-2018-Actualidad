@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width,user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+
+</meta>
+<title>AndriusMW.net</title>
+ 
+ <script  type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+        <script  type="text/javascript" src="assets/js/slide.js"></script>
+       <script  type="text/javascript" src="assets/js/lightbox.min.js"></script>
+
+
+
+       <link rel="icon" href="images/icono.ico">
+<style>
+
+body
+{
+background-image: url("images/texturagrunge.jpg");
+background-size: auto;
+
+		color: #777777;
+}
+#contenedor {
+
+width: 950px;
+margin: 0 auto;
+
+}
+
+#cabecera{
+background-color: black;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+	
+
+
+#contenido{	
+float: left;
+width: 100%;
+background-color: black;
+
+
+}
+
+
+#pie{
+clear: both;
+background-color: black;
+text-align: center;
+
+
+}
+/*------------------------------efectos deBarra de navegación y botones ------*/
+#nav a {
+	
+	color: white;
+	padding-left: 10px;
+	text-decoration:none ;
+}
+
+#nav a:hover {
+color:	#00FFFF;
+
+}
+
+a:hover {
+color:	#00FFFF;
+
+}
+
+a {
+color:#6495ED;
+}
+
+
+button:hover {
+color:	#FAEBD7;
+background-color:#5F9EA0;
+}
+
+/*--------------------------Slide de imágenes moviéndose */
+
+.slide{
+    z-index: 1;
+    width: 400px;
+    height: 300px;
+    margin-left:85px;
+    position: relative;
+}
+ 
+.slide img{
+    z-index: 1;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+
+}
+ 
+.slide .img1, .slide .img2, .slide .img3 {
+    z-index: 1;
+    display: none;
+}
+
+-/*-----------------------------------Slider del tutorial*/
+
+.slider{
+
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+
+	display: flex;
+	padding:0;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate;
+}
+
+.slider li {
+
+	width:100%;
+	list-style: none;
+
+}
+	
+.slider img{
+
+	width: 100%;
+}
+
+@keyframes cambio{
+
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100;}
+	45% {margin-left: -100;}
+
+	50% {margin-left: -200;}
+	70% {margin-left: -200;}
+
+	75% {margin-left: -300;}
+	100% {margin-left: -300;}
+
+}
+
+/*----------------------------------PRUEBA 3 SLIDE ------------- -*/
+
+
+
+* {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  background: #000;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  width: 910px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+li {
+  width: 130px;
+  height: 300px; 
+  float: left;
+  transition: .7s;
+}
+li a {
+  display: block;
+  width:auto;
+  height: auto;
+  overflow: hidden;
+  text-decoration: none; 
+}
+ul:hover li {width: 70px;}
+ul:hover li:hover {
+width: 490px;
+}
+li span {
+position:absolute;
+opacity:0;
+top:-80px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 5px;
+background: rgba(0,0,0,.25);
+padding:10px;
+margin: 0 5px;
+color: rgba(255,255,255,.5);
+transition: .9s .3s;
+}
+li:hover span {
+opacity:1;
+top: 230px;
+}
+span:hover {
+  background: rgba(0,0,0,.7);
+  color: rgba(146,173,232,1);  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="contenedor">
+
+		
+
+		
+
+		
+
+		<img  src="images/logobotones_2.png" alt="Imagen no disponible" usemap="#formas"
+		ismap="ismap" />
+		<map name="formas" id="formas">
+
+		<area shape="rect" coords="253,72,735,163" href="https://www.andriusmw.net/index.html"alt="Rectángulo" />
+		
+		<area shape="circle" coords="761,,203,16" href="https://www.facebook.com/AndriusMW" alt="facebook circulo" />
+		<area shape="circle" coords="801,,203,16" href="https://twitter.com/AndriusMW" alt="twitter circulo" />
+		<area shape="circle" coords="843,,201,16" href="https://www.youtube.com/channel/UCbW0-u8ofWdkAvWwlrw1IsQ" alt="YT circulo" />
+		<area shape="circle" coords="882,,201,16" href="https://www.instagram.com/andriusmw/" alt="instagram circulo" />
+		<area shape="circle" coords="923,,203,16" href="https://andriusmw.blogspot.com.es/" alt="blog circulo" />
+		
+		</map> 
+
+
+
+
+
+
+
+
+
+
+
+
+		<div id="cabecera">
+			<!-- Nav -->
+					<nav id="nav">
+						<a href="index.html" ><font size="5">Home</font></a>
+						<a href="noticias.html" ><font size="5">Noticias</font></a>
+						<a href="musica.html" ><font size="5">Música</font></a>
+						<a href="galeria.html" ><font size="5">Galería</font></a>
+						<a href="sobremi.html" ><font size="5">Sobre mí</font></a>
+						<a href="tienda.html" ><font size="5">Tienda</font></a>
+						<a href="contacto.html" ><font size="5">Contacto</font></a>
+						
+						
+					</nav>
+
+		</div>
+
+		<div id="contenido">
+			
+
+			<!-- Main -->
+					<div id="main" >
+
+					<!-- Home -->
+							
+								
+									<h1 style="margin-left:20px;width:500px;float:left" >Home</h1>
+
+									<p class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" >"Welcome to the rampage".<br><br><br></p>
+
+										
+									
+											
+
+											<a  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" href="noticias/noticia3.html" ><font size="5">Noticia 3</font></a><br>
+										
+										<p  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" >Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum
+											Lorem impsum <a href="noticias/noticia3.html" >leer más </a> </p> </p> 
+
+											<a  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" href="noticias/noticia2.html" ><font size="5">Noticia 2</font></a><br>
+										
+										<p  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" >Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum
+											Lorem impsu<a href="noticias/noticia2.html" >leer más </a> </p> </p> 
+
+											<a  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" href="noticias/noticia1.html" ><font size="5">Noticia 1</font></a><br>
+										
+										<p  class="home" style="margin-left:20px; margin-top:5px;width:500px;float:left" >Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum Lorem impsum
+											Lore <a href="noticias/noticia1.html" >leer más </a> </p> </p> 
+
+
+							
+ <div class="slide">
+                  <figure>
+                      <a href=""> <img class="img1" alt="alt img1" src="images/1.jpg" /></a>
+                      
+                     <a href="">   <img class="img2" alt="alt img 2" src="images/2.jpg" /></a>
+                       
+                      <a href=""> <img class="img3" alt="alt img3" src="images/14.jpg" /></a>
+                      
+                     
+                   </figure>
+             </div>
+
+
+
+<!-- PRUEBA 3 SLIDE -->
+
+<!-- Old jsfiddle from 2012 -->  
+<ul class="ejemplo">
+    <li>
+      <a href="#"><img src="https://lh4.googleusercontent.com/-3QNEIgX3Gv4/UCPyLTtnmHI/AAAAAAAAEDY/KGb0eEM9GZo/s500/fuerzas-naturaleza.jpg"/>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nunc non augue ullamcorper ac vestibulum tortor placerat.</span></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://lh5.googleusercontent.com/-KijskybjlCc/UCPyNCwVxPI/AAAAAAAAEDg/8AwgBhZyhG4/s500/fuerzas-naturaleza2.jpg"/>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nunc non augue ullamcorper ac vestibulum tortor placerat.</span></a>
+    </li>
+    <li>
+      <a href="#"><img src="https://lh5.googleusercontent.com/-uGIMoR677PM/UCPyOBjNWVI/AAAAAAAAEDo/XE73W5FQW-c/s500/fuerzas-naturaleza3.jpg"/>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor nunc non augue ullamcorper ac vestibulum tortor placerat.</span></a>
+    </li>
+    
+  </ul>
+
+  <!--  ------------------------------------------PRUEBA SLIDER CON SUBTITULOS ------------------------- -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+<!--
+							<div class="slider">
+								<ul>
+									<li><img src="images/2.jpg" alt=""></li>
+									<li><img src="images/14.jpg" alt=""></li>
+									<li><img src="images/10.jpg" alt=""></li>
+									<li><img src="images/11.jpg" alt=""></li>
+								</ul>
+							</div>
+
+-->
+
+
+								<!--	<img style="width:300px; height:400px;margin-top: 35px;margin-left:85px" src="images/1.jpg" alt="imagen no disponile">
+
+									-->
+
+					</div>
+
+
+
+
+		</div>
+
+
+	<div id="pie">Página web hecha por Andrius MW</div>
+
+
+
+	</div>
+
+
+
+
+
+		
+
+</body>
+
+
+</html>

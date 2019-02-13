@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+}
+
+.logo {
+    width: 100%;
+}
+
+.main {
+        width: 50%;
+        float: left;
+    }
+
+aside {
+        float: left;
+        width: 50%;
+    }
+
+@media only screen and (max-width: 500px) {
+    body {
+      
+      font-size: 3vw;
+      height: 100vh;
+    }
+    
+    aside {
+        float: left;
+        display: block;
+        width: 100%;
+        
+    }
+
+    .importante {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .responsive{ 
+        width: 90%;
+
+    }
+
+   .main {
+        width: 100%;
+    }
+
+   
+
+
+
+
+  }
